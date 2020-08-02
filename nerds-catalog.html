@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <title>Nerds</title>
+</head>
+
+<body class="inner-page">
+  <header class="main-header">
+    <nav class="main-nav-site">
+      <a href="index.html"><img class="logo" src="content/logo.svg" alt="Лого сайта" width="160"></a>
+      <ul class="site-navigation">
+        <li><a href="#">Студия</a></li>
+        <li><a href="#">Клиенты</a></li>
+        <li><a href="#">Магазин</a></li>
+        <li><a href="#">Контакты</a></li>
+      </ul>
+      <ul class="basket">
+        <li><a href="#">Корзина</a></li>
+      </ul>
+    </nav>
+    <h1 class="header-inner-page">Магазин готовых шаблонов</h1>
+  </header>
+  <main class="inner-page-catalog">
+    <div class="catalog-centering">
+      <section class="filter-catalog">
+        <form method="POST" action="#">
+          <fieldset class="filter-cost">
+            <legend>Стоимость:</legend>
+            <strong>Будет реализовано позже!</strong>
+            <img src="content/nerds-catalog.jpg" alt="Ползунок выбора цены" width="250">
+          </fieldset>
+          <fieldset class="filter-grid">
+            <legend>Сетка:</legend>
+            <ul class="grid-input">
+              <li>
+                <label>
+                  <input type="radio" name="grid">Адаптивная</label>
+              </li>
+              <li>
+                <label>
+                  <input type="radio" name="grid">Фиксированная</label>
+              </li>
+              <li>
+                <label>
+                  <input type="radio" name="grid">Резиновая</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="filter-features">
+            <legend>Особенности:</legend>
+            <ul class="features-input">
+              <li>
+                <label>
+                  <input type="checkbox" name="slider">Слайдер</label>
+              </li>
+              <li>
+                <label>
+                  <input type="checkbox" name="block-of-advantages">Блок преимуществ</label>
+              </li>
+              <li>
+                <label>
+                  <input type="checkbox" name="news">Новости</label>
+              </li>
+              <li>
+                <label>
+                  <input type="checkbox" name="gallery">Галерея</label>
+              </li>
+              <li>
+                <label>
+                  <input type="checkbox" name="basket">Корзина</label>
+              </li>
+            </ul>
+          </fieldset>
+          <button>Показать</button>
+        </form>
+      </section>
+      <div class="sorting-and-assortment">
+        <section class="sorting-catalog">
+          <h2>Сортировать:</h2>
+          <div>
+            <button class="by-price">По цене</button>
+            <button class="by-type">По типу</button>
+            <button class="by-name">По названию</button>
+            <span class="triangle-down">&#9660;</span>
+            <span class="triangle-up">&#9650;</span>
+          </div>
+        </section>
+
+        <section class="assortment-catalog">
+          <div class="catalog">
+            <a class="product" href="#"><img src="content/catalog-sedona.jpg" alt=""></a>
+            <div class="pop-up">
+              <h3>Sedona</h3>
+              <p>Информационный сайт
+                <br> для туристов</p>
+              <button>9900 руб.</button>
+            </div>
+          </div>
+
+          <div class="catalog">
+            <a class="product" href="#"><img src="content/catalog-pink.jpg" alt=""></a>
+            <div class="pop-up">
+              <h3>Pink App</h3>
+              <p>Продуктовый лендинг
+                <br> приложения для iOS и Android</p>
+              <button>9900 руб.</button>
+            </div>
+          </div>
+          <div class="catalog">
+            <a class="product" href="#"><img src="content/catalog-barbershop.jpg" alt=""></a>
+            <div class="pop-up">
+              <h3>Barbershop</h3>
+              <p>Сайт салоны красоты.
+                <br> Для мужчин, да.</p>
+              <button>9900 руб.</button>
+            </div>
+          </div>
+          <div class="catalog">
+            <a class="product" href="#"><img src="content/catalog-mishka.jpg" alt=""></a>
+            <div class="pop-up">
+              <h3>Mishka</h3>
+              <p>Интернет-магазин
+                <br> вязаных игрушек</p>
+              <button>9900 руб.</button>
+            </div>
+          </div>
+          <div class="catalog">
+            <a class="product" href="#"><img src="content/catalog-aplus.jpg" alt=""></a>
+            <div class="pop-up">
+              <h3>A Plus</h3>
+              <p>Лендинг курсов повышения
+                <br> квалификации
+              </p>
+              <button>9900 руб.</button>
+            </div>
+          </div>
+          <div class="catalog">
+            <a class="product" href="#"><img src="content/catalog-kvast.jpg" alt=""></a>
+            <div class="pop-up">
+              <h3>Кваст</h3>
+              <p>Промо-сайт производителя
+                <br> крафтового кваса</p>
+              <button>9900 руб.</button>
+            </div>
+          </div>
+
+        </section>
+        <div class="pagination">
+          <span class="pagination-indicator">1</span>
+          <span>2</span>
+          <span>3</span>
+          <button>Cледующая</button>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div class="map">
+      <div class="container-contact">
+        <div class="contact">
+          <h4>Nёrds design studio</h4>
+          <address>191186, Санкт-Петербург,<br> ул. Б. Конюшенная, д. 19/8</address>
+          <a class="call-us" href="tel:+7(812)275-75-75">тел. +7 (812) 275-75-75</a>
+          <a class="write-us">Напишите нам</a>
+        </div>
+      </div>
+    </div>
+    <div class="social-networks">
+      <ul class="social-list">
+        <li><a href="https://vk.com/" class="vkontakte"><span class="visually-hidden">Vkontakte</span></a></li>
+        <li><a href="https://www.facebook.com/" class="facebook"><span class="visually-hidden">Facebook</span></a></li>
+        <li><a href="https://www.instagram.com/" class="instagram"><span class="visually-hidden">Instagram</span></a></li>
+      </ul>
+      <div>
+        <h5>Давайте дружить, это выгодгодно!</h5>
+        <p>Скидка 10% для друзей из социальных сетей.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
